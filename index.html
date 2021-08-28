@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Birthday</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Check-out if your Birthdate is <span style="color: #ffe0c4;">Palidrome</span> or not
+        </h1>
+        <h2>A palindrome is a word/number which reads the same backward as forward</h2>
+
+        <div style="font-weight: bold;">This app checks your birthdate in 6 formats
+           <br>
+           <br/>1. yyyy-mm-dd
+            <br/>2. dd-mm-yyyy
+            <br/>3. mm-dd-yyyy
+            <br/> 4. dd-mm-yyyy
+            <br/> 5. mm-dd-yyyy
+            <br/> 6. yyyy-mm-dd
+            </div>
+
+        <div class="notice">
+            <span style="font-weight: bold;">Notice:</span> We are not storing any
+            personal information!
+        </div>
+
+        <input type="date" id="date-input" required />
+
+        <button id="check-btn">Check</button>
+
+        <div class="loading-animation">
+            <lottie-player src="https://assets10.lottiefiles.com/datafiles/bEYvzB8QfV3EM9a/data.json" background="transparent"
+                speed="1.2" id="loading-lottie" loop autoplay></lottie-player>
+        </div>
+
+        <div id="output"></div>
+
+    </div>
+
+    <footer class="container footer" >
+        <p style="color:#ffc1c1 ;">&COPY;Made with ❤️ by <a class="portfolio-link" target="_blank" href="https://shivangi-portfolio.netlify.app">Shivangi Sharma</a>
+        </p>
+        <div id="social-links">
+            <a target="_blank" href="https://github.com/Shivangisharma01" class="social-link fa fa-github"> GitHub</a>
+            <a target="_blank" href="https://twitter.com/Shivangi_1001" class="social-link fa fa-twitter"> Twitter</a>
+            <a target="_blank" href="https://www.linkedin.com/in/shivangi-sharma-01/"
+                class="social-link fa fa-linkedin"> LinkedIn</a>
+        </div>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
